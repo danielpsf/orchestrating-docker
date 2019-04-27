@@ -1,11 +1,19 @@
-## Dockerizing Flask With Compose and Machine - From Localhost to the Cloud
+## Dockerizing a Flask app with Docker Compose
 
 Featuring:
-
-- Docker v18.09.2
 - Docker Compose v1.23.2
-- Docker Machine v0.16.1
+  - Static website
+  - Python Flask app
+  - PostgreSQL database
 
-**Check out the awesome blog post here > https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/**
+### Running
 
-Cheers!
+```docker-compose up --build -d```
+
+```docker-compose run web /usr/local/bin/python create_db.py```
+
+Voila! Access http://localhost
+
+### Original post
+
+https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/
